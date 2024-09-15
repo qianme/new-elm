@@ -13,7 +13,7 @@ from urllib.parse import urlencode, quote
 host = 'https://acs.m.goofish.com'
 
 ck = ''
-elm_host = open('xsign_host.txt', 'r', encoding='utf-8').read()
+elm_host = open('xsign_host.txt', 'r', encoding='utf-8').read().split("\n")[0]
 
 import json
 import random

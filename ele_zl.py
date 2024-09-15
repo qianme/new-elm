@@ -14,7 +14,7 @@ import datetime
 host = 'https://acs.m.goofish.com'
 
 zlck = os.environ.get('ZL_CK', "")
-elm_host = open('xsign_host.txt', 'r', encoding='utf-8').read()
+elm_host = open('xsign_host.txt', 'r', encoding='utf-8').read().split("\n")[0]
 ck = ""
 
 

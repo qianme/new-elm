@@ -17,7 +17,7 @@ from requests import RequestException
 host = 'https://acs.m.goofish.com'
 
 ck = ''
-elm_host = open('xsign_host.txt', 'r', encoding='utf-8').read()
+elm_host = open('xsign_host.txt', 'r', encoding='utf-8').read().split("%")[0]
 
 
 import json

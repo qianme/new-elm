@@ -10,7 +10,7 @@ import requests
 from urllib.parse import quote, urlencode
 
 host = 'https://acs.m.goofish.com'
-elm_host = open('xsign_host.txt', 'r', encoding='utf-8').read()
+elm_host = open('xsign_host.txt', 'r', encoding='utf-8').read().split("\n")[0]
 ck = ''
 
 def hbh5tk(tk_cookie, enc_cookie, cookie_str):

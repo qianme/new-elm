@@ -1,1 +1,1 @@
-http://ele.562455.xyz/api/getXSign
+http://192.168.88.120:9999/api/getXSign

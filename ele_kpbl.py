@@ -327,7 +327,7 @@ class TYT:
                            "longitude": "104.09800574183464", "latitude": "30.22990694269538"})
         
         res = req(api, data, self.uid, self.sid, "1.0")
-        print(f"获取任务列表",res.text)
+        print(f"获取任务列表")
 
         if res.json()['ret'][0] == 'SUCCESS::调用成功':
             self.taskList = json.loads(res.json()["data"]["data"])

@@ -269,13 +269,13 @@ async function start() {
       let _0x267afc = await checkCk(_0x2a66d2, _0x4dde97);
       if (!_0x267afc) continue;
       let _0x26d709 = await getUserInfo(_0x267afc);
-      if (!_0x26d709.username) {
+      if (!_0x26d709.userName) {
         console.log("第", _0x4dde97 + 1, "账号失效！请重新登录！！！😭");
         continue;
       }
       const _0x141662 = _0x26d709.user_id;
       await checkCarmeCount(kami, _0x141662, GAME_TYEP);
-      console.log("******开始【饿了么账号", _0x4dde97 + 1, "】", _0x26d709.username, "*********");
+      console.log("******开始【饿了么账号", _0x4dde97 + 1, "】", _0x26d709.userName, "*********");
       await lyb_sign(_0x267afc);
       await lottery(_0x267afc);
       const _0x57279d = await lyb_llk_token(_0x267afc);
